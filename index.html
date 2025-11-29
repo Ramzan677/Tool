@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panther Tools - Secure Access</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Password Protection Screen -->
+        <div id="auth-screen" class="auth-screen">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1 class="title">ʙʟᴀᴄᴋ ᴘᴀɴᴛʜᴇʀ 🖤</h1>
+                    <p class="subtitle">Secure Tools Portal</p>
+                </div>
+                
+                <div class="auth-form">
+                    <div class="input-group">
+                        <input type="password" id="password-input" class="password-input" 
+                               placeholder="Enter access password" autocomplete="off">
+                        <button id="login-btn" class="login-btn">
+                            <i class="fas fa-lock"></i> Access Tools
+                        </button>
+                    </div>
+                    <div id="error-message" class="error-message"></div>
+                    
+                    <div class="security-info">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Enhanced Security Protection Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content (Hidden until authenticated) -->
+        <div id="main-content" class="main-content hidden">
+            <header>
+                <h1 class="title">ʙʟᴀᴄᴋ ᴘᴀɴᴛʜᴇʀ 🖤</h1>
+                <p class="subtitle">Premium Tools & Utilities Collection</p>
+                
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Search for tools...">
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </header>
+            
+            <main id="tools-container">
+                <!-- Tools will be loaded dynamically -->
+            </main>
+            
+            <footer>
+                <a href="https://whatsapp.com/channel/0029VbAqjOz8fewrEmc09525" class="whatsapp-channel" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Join Our WhatsApp Channel
+                </a>
+                <p class="footer-text">© 2023 Black Panther Tools. All tools are for educational and testing purposes only.</p>
+                <p class="footer-text">Use responsibly and in compliance with applicable laws.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="tools-data.js"></script>
+</body>
+</html>
